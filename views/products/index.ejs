@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Produktai</title>
+</head>
+
+<body class="containes" style="margin-top: 50px;">
+    <table>
+        <thead>
+            <th>Product code</th>
+            <th>Product name</th>
+            <th>Product line</th>
+            <th>Product price</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+            <% for(let i=0; i<data.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= data[i].productCode%>
+                    </td>
+                    <td>
+                        <%= data[i].productName%>
+                    </td>
+                    <td>
+                        <%= data[i].productLine%>
+                    </td>
+                    <td>
+                        <%= data[i].buyPrice%>
+                    </td>
+                    <td>Tuscia</td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
